@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class = 'container'>
+    <h1>Prediction result</h1>
+    <hr>
+    <div>
+        <img src = {{ result.path_to_image }} width= {{ result.size }} height="auto">
+    </div>
+    <hr>
+    <div>
+        <h3>This is a picture of a {{ result.class_name }}</h3>
+    </div>
+  </div>
+
+{% endblock %}
+
